@@ -1,0 +1,31 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Musa.AppHost/Musa.AppHost.csproj" />
+    <Project Path="src/Musa.Gateway/Musa.Gateway.csproj" />
+    <Project Path="src/Musa.ServiceDefaults/Musa.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/Musa.EventBus/Musa.EventBus.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Auctions/">
+    <Project Path="src/Services/Auctions/Auctions.API/Auctions.API.csproj" />
+    <Project Path="src/Services/Auctions/Auctions.Domain/Auctions.Domain.csproj" />
+    <Project Path="src/Services/Auctions/Auctions.Infrastructure/Auctions.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Catalog/">
+    <Project Path="src/Services/Catalog/Catalog.API/Catalog.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Journal/">
+    <Project Path="src/Services/Journal/Journal.API/Journal.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Ordering/">
+    <Project Path="src/Services/Ordering/Ordering.API/Ordering.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Provenance/">
+    <Project Path="src/Services/Provenance/Provenance.API/Provenance.API.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Auctions.UnitTests/Auctions.UnitTests.csproj" />
+  </Folder>
+</Solution>
