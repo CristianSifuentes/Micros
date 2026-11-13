@@ -1,0 +1,10 @@
+{
+  "name": "Musa — arte, diseño y moda",
+  "short_name": "Musa",
+  "description": "Sala de subastas, boutique, procedencia y diario.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3efe6",
+  "theme_color": "#f3efe6",
+  "icons": [ { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" } ]
+}

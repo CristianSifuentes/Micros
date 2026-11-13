@@ -1,0 +1,24 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.6.5">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services\Catalog\Catalog.API\Catalog.API.csproj" />
+    <ProjectReference Include="..\Services\Ordering\Ordering.API\Ordering.API.csproj" />
+    <ProjectReference Include="..\Services\Provenance\Provenance.API\Provenance.API.csproj" />
+    <ProjectReference Include="..\Services\Journal\Journal.API\Journal.API.csproj" />
+    <ProjectReference Include="..\Services\Auctions\Auctions.API\Auctions.API.csproj" />
+    <ProjectReference Include="..\Musa.Gateway\Musa.Gateway.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AspireUseCliBundle>true</AspireUseCliBundle>
+    <UserSecretsId>d6403f48-df4a-4c89-8d61-b2cadd9cd0e1</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

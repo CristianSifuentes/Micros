@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Musa — arte, diseño y moda</title>
+  <meta name="description" content="Una casa para el arte, el diseño y la moda: sala de subastas, boutique, registro de procedencia y diario.">
+  <meta name="theme-color" content="#f3efe6">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <nav aria-label="Secciones">
+      <a href="#sala">Sala</a><a href="#coleccion">Colección</a><a href="#diario">Diario</a>
+    </nav>
+    <label class="paddle">Tu paleta
+      <select id="paddle" aria-label="Paleta con la que pujas y compras">
+        <option>P-101</option><option>P-202</option><option>P-303</option>
+      </select>
+    </label>
+  </header>
+
+  <section class="hero">
+    <p class="issue" id="issue"></p>
+    <h1>Musa</h1>
+    <p class="manifesto">Una casa para lo que está hecho con las manos y pensado con los ojos. Aquí las obras se subastan, las piezas se adquieren, y todo lo que ocurre queda escrito.</p>
+  </section>
+
+  <section id="sala" class="saleroom">
+    <header class="section-head"><h2>La sala</h2><p id="room-status">La sala está en silencio.</p></header>
+    <div id="lots" class="lots" aria-live="polite"></div>
+  </section>
+
+  <section id="coleccion" class="collection">
+    <header class="section-head">
+      <h2>La colección</h2>
+      <div class="filters" role="group" aria-label="Filtrar por disciplina">
+        <button data-discipline="" aria-pressed="true">Todo</button>
+        <button data-discipline="Art" aria-pressed="false">Arte</button>
+        <button data-discipline="Fashion" aria-pressed="false">Moda</button>
+        <button data-discipline="Design" aria-pressed="false">Diseño</button>
+      </div>
+    </header>
+    <div id="pieces" class="pieces"></div>
+  </section>
+
+  <section id="diario" class="journal">
+    <header class="section-head"><h2>El diario</h2><p>Ensayos, notas y la crónica que la casa escribe sola.</p></header>
+    <div class="journal-grid">
+      <div id="entries" class="entries"></div>
+      <form id="note" class="note">
+        <h3>Nota del día</h3>
+        <textarea name="body" rows="5" maxlength="2000" required placeholder="Algo visto, leído o escuchado hoy…" aria-label="Texto de la nota"></textarea>
+        <input name="author" maxlength="60" placeholder="Firma" aria-label="Firma">
+        <button>Guardar en el cuaderno</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Musa · Primer movimiento. Todos los creadores y casas son ficticios; cada imagen se dibuja a partir de la identidad de su pieza.</p>
+  </footer>
+
+  <dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
